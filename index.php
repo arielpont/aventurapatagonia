@@ -12,7 +12,7 @@
 
   $helper = $fb->getRedirectLoginHelper();
   $permissions = ['email', 'public_profile', 'user_friends']; // optional
-  $loginUrl = $helper->getLoginUrl('http://localhost/aventurapatagonia/dni.php', $permissions);
+  $loginUrl = $helper->getLoginUrl('http://www.aeidos.com.ar/aventurapatagonia/dni.php', $permissions);
 
   // echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 ?>
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper-index">
 
       <div class="block-up">
         <div class="logo"></div>
@@ -37,7 +37,7 @@
         <div class="btn">
           <div class="facebook"></div>
           <a href="<?php echo $loginUrl ?>"><span>Conectate con Facebook</span></a>
-        </div>>
+        </div>
       </div>
 
     </div>

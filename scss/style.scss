@@ -17,14 +17,15 @@
 }
 
 
-body {padding:0px; margin:0px; color:#FFF}
+body {padding:0px; margin:0px; color:#FFF; position:relative;}
 
 //VARIABLES
 $color-facebook: #32577B;
 
 //INDEX.PHP
-.wrapper {
+.wrapper-index {
 	width: 100%;
+	height: 100%;
 
 	.block-up {
 		position: relative;
@@ -94,5 +95,110 @@ $color-facebook: #32577B;
 				}
 			}
 		}
+	}
+}
+
+//DNI.PHP
+.wrapper-dni {
+	width: 100%;
+	height: 100%;
+	background: url("../img/backgrounds/bg2.jpg") center no-repeat;
+	background-size: cover;
+
+	.logo {
+			position: relative;
+			width: 75%;
+			margin: 0px auto;
+			padding-top: 200px;
+			background: url("../img/logo/logo2.svg") center no-repeat;
+			background-size: contain;
+		}
+
+	.profile-img {
+		position: relative;
+		width: 150px;
+		height: 150px;
+		margin: 0px auto;
+		border-radius: 100%;
+		border: 2px solid #DEDDDD;
+		background-size: cover;
+		background-color: #DEDDDD;
+	}
+
+	.txt {
+		width: 70%;
+		margin: 0px auto;
+		margin-top: 25px;
+		font-family: "latoregular";
+		font-size: 14px;
+		text-align: center;
+		line-height: 1.50em;
+	}
+
+	#dni {
+		display: block;
+		width: 80%;
+		height: 40px;
+		margin: 0px auto;
+		margin-top: 20px;
+		background-color: rgba(234,234,234, 0.72);
+		border-radius: 7px;
+		font-family: "latobold";
+		font-size: 16px;
+		text-align: center;
+		color: #3D3E39;
+		line-height: 40px;
+		outline: none;
+		border: none;
+	}
+
+
+	#btn-dni {
+		display: block;
+		width: 80%;
+		height: 40px;
+		margin: 0px auto;
+		margin-top: 20px;
+		background-color: #CE4E55;
+		border-radius: 7px;
+		font-family: "latobold";
+		font-size: 14px;
+		text-align: center;
+		color: #FFF;
+		line-height: 40px;
+		outline: none;
+		border: none;
+		cursor: pointer;
+	}
+
+	#btn-dni:hover {
+		background-color: #7098D0;
+	}
+}
+
+//DASHBOARD.PHP
+.wrapper-dashboard {
+	width: 100%;
+	height: 100%;
+
+	.logo {
+		position: relative;
+		width: 35%;
+		height: 60px;
+		margin: 0px auto;
+		margin-top: 25px;
+		background: url("../img/logo/logo3.svg") center no-repeat;
+		background-size: contain;
+	}
+
+	.profile-img {
+		position: relative;
+		width: 150px;
+		height: 150px;
+		margin: 0px auto;
+		border-radius: 100%;
+		border: 2px solid #DEDDDD;
+		background-size: cover;
+		background-color: #DEDDDD;
 	}
 }

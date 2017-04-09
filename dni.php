@@ -3,18 +3,18 @@
 	session_name("aventurapatagonia");
 	session_start();
 	
-	$root=pathinfo($_SERVER['SCRIPT_FILENAME']);
+	/* $root=pathinfo($_SERVER['SCRIPT_FILENAME']);
 	define ('BASE_FOLDER', basename($root['dni']));
 	define ('SITE_ROOT',    realpath(dirname(__FILE__)));
 	define ('SITE_URL',    'http://'.$_SERVER['HTTP_HOST'].'/dni'.BASE_FOLDER);
-	define ('ERROR_URL',    'http://'.$_SERVER['HTTP_HOST'].'/dni/error404.php');
+	define ('ERROR_URL',    'http://'.$_SERVER['HTTP_HOST'].'/dni/error404.php');p[; */
 
 	$fb_access_token = $_SESSION['fb_access_token'];
 	
 	//CHEQUEO SI ESTA LOGEUADO
 	if($fb_access_token == ''){
 		//ENVIO A LOGUEARSE
-		header('Location: '.SITE_URL);
+		/*header('Location: '.SITE_URL);*/
 	}else{
 		//LOGUEADO. OK!
 		require_once('php/facebook-php-sdk-v4-5.0.0/autoload.php');
@@ -75,3 +75,28 @@
 		}
 	}
 ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AVENTURA PATAGONIA</title>
+    <meta charset="UTF-8">
+
+    <!--JS-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/mask/src/jquery.mask.js"></script>
+	<script src="js/dni.js"></script>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper-dni">
+    	<div class="logo"></div>
+    	<div class="profile-img" style='background:url("http://graph.facebook.com/<?php echo $userIdFacebook;?>/picture?type=square")'></div>
+    	<div class="txt">Ingresa tu D.N.I</div>
+    	<input id="dni" type="text" name="dni">
+    	<div id="btn-dni">OBTEN&Eacute; TU PASAPORTE</div>
+    </div>
+  </body>
+</html>
