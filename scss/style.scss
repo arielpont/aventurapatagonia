@@ -1,5 +1,28 @@
+@font-face {
+    font-family: 'latobold';
+    src: url('fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {padding:0px; margin:0px; color:#FFF}
 
+//VARIABLES
+$color-facebook: #32577B;
+
+//INDEX.PHP
 .wrapper {
 	width: 100%;
 
@@ -20,7 +43,56 @@ body {padding:0px; margin:0px; color:#FFF}
 		}
 
 		.welcome-txt {
+			width: 70%;
+			margin: 0px auto;
+			font-family: "latoregular";
+			font-size: 14px;
+			text-align: center;
+			line-height: 1.50em;
+		}
+	}
 
+	.block-down {
+		position: relative;
+		width: 100%;
+
+		.btn {
+			position: relative;
+			width: 80%;
+			height: 40px;
+			margin: 0px auto;
+			margin-top: 50px;
+			border-radius: 7px;
+			background: $color-facebook;
+			font-family: "latobold";
+			font-size: 14px;
+
+			.facebook {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				left: 10px;
+				top: 10px;
+				background: url("../img/logo/facebook.svg") center no-repeat;
+				background-size: contain;
+				z-index: 9;
+			}
+
+			a {
+				display: block;
+				text-decoration: none;
+				outline: none !important;
+
+				span {
+
+					display: block;
+					width: 100%;
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					color: #FFF;
+				}
+			}
 		}
 	}
 }
