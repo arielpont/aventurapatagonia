@@ -78,7 +78,7 @@
         <div class="txt">Km</div>
         <div class="km-bar">
           <div class="num">1.246</div>
-          <div class="rank">Aprendiz Cervecero</div>
+          <div class="rank">Aprendíz Cervecero</div>
           <div id="jqmeter-container"></div>
           <div class="num-prox">2.000km</div>
         </div>
