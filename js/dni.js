@@ -10,6 +10,6 @@ $(document).ready(function() {
 
         Cookies.set('cookie-dni', dni, {expires: 9000});
 
-        alert(Cookies.get('cookie-dni'));
+        //alert(Cookies.get('cookie-dni'));
     });
 });

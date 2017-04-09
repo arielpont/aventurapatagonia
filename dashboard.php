@@ -116,35 +116,51 @@
 
       <div class="wrapper-beneficios">
 
-        <div class="box-beneficio">
-          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+        <div class="box-beneficio bg-none">
+          <div class="title">Visita a la micro-cervecería de Bariloche.</div>
           <div class="btn">
             <div class="txt">adquirir</div>
-            <div class="get">827km</div>
+            <div class="get">2.000km</div>
           </div>
         </div>
 
-        <div class="box-beneficio bg-none">
-          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+        <div class="box-beneficio">
+          <div class="title">Invitación a apertura de refugios.</div>
           <div class="btn">
             <div class="txt">adquirir</div>
             <div class="get">1.135km</div>
           </div>
         </div>
 
-        <div class="box-beneficio">
-          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+        <div class="box-beneficio bg-none">
+          <div class="title">Invitación lanzamiento de nuevas bebidas.</div>
           <div class="btn">
             <div class="txt">adquirir</div>
-            <div class="get">354km</div>
+            <div class="get">837km</div>
           </div>
         </div>
 
-        <div class="box-beneficio bg-none">
-          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+        <div class="box-beneficio">
+          <div class="title">Catas de cervezas.</div>
           <div class="btn">
             <div class="txt">adquirir</div>
             <div class="get">554km</div>
+          </div>
+        </div>        
+
+        <div class="box-beneficio bg-none">
+          <div class="title">Tercera cerveza en el mismo día, 30% descuento en Cabifay.</div>
+          <div class="btn">
+            <div class="txt">adquirir</div>
+            <div class="get">¡PEDILO!</div>
+          </div>
+        </div>
+
+        <div class="box-beneficio">
+          <div class="title">2x1 con amigos</div>
+          <div class="btn">
+            <div class="txt">adquirir</div>
+            <div class="get">200km</div>
           </div>
         </div>
 

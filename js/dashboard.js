@@ -6,7 +6,7 @@ $(document).ready(function(){
 	    width:'100%',
 	    height:'6px',
 	    displayTotal: false,
-	    animationSpeed: 3000,
+	    animationSpeed: 4000,
 	    counterSpeed: 500,
 	});
 });
