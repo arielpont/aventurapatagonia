@@ -53,9 +53,8 @@
 
 
 
-
 		/** CHEQUEO SI EL USUARIO YA ESTA EN LA DB **/
-		$checkUser_qr = db_select("SELECT iduser, idfacebook, fullname, biography FROM user WHERE idfacebook ='$userIdFacebook'");
+		/*$checkUser_qr = db_select("SELECT idfacebook, fullname FROM user WHERE idfacebook = $userIdFacebook");
 
 		if($userIdFacebook == $checkUser_qr[0]['idfacebook']){
 			//EXISTE EL USUARIO. CHEQUEO SI ACTUALIZÓ DATOS EN FACEBOOK.
@@ -63,22 +62,12 @@
 				//DATOS ACTUALIZADOS
 			}else{
 				//DATOS DEZACTUALIZADOS. ACTUALIZO NOMBRE.
-				$updateUser_qr = db_query("UPDATE user SET fullname='$userName' WHERE iduser='$checkUser_qr[0]['iduser']'");
+				$updateUser_qr = db_query("UPDATE user SET fullname='$userName' WHERE iduser=$checkUser_qr[0]['iduser']'");
 			}
 		}else{
 			//NO EXISTE EL USUARIO. LO AGREGO A LA DB.
 			$addUser_qr = db_query("INSERT INTO user (idfacebook, fullname) VALUES ('$userIdFacebook', '$userName')");
-		}
-
-
-
-
-		$biography = "";
-		if($checkUser_qr[0]['biography'] == ''){
-			$biography = "Complete your description...";
-		}else{
-			$biography = $checkUser_qr[0]['biography'];
-		}
+		}*/
 	}
 ?>
 
@@ -92,6 +81,7 @@
     <!--JS-->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="js/mask/src/jquery.mask.js"></script>
+	<script src="js/cookie/src/cookie.js"></script>
 	<script src="js/dni.js"></script>
 
     <!-- CSS FILES -->
@@ -100,8 +90,8 @@
   <body>
     <div class="wrapper-dni">
     	<div class="logo"></div>
-    	<div class="profile-img" style='background:url("http://graph.facebook.com/<?php echo $userIdFacebook;?>/picture?type=square")'></div>
-    	<div class="txt">Hola <?php echo $userName ?> , ingresa tu D.N.I</div>
+    	<div class="profile-img" style='background:url("https://graph.facebook.com/<?php echo $userIdFacebook;?>/picture?width=150&height=150")'></div>
+    	<div class="txt">Hola <b><?php echo $userName ?></b> , ingresa tu D.N.I</div>
     	<input id="dni" type="text" name="dni">
     	<div id="btn-dni">OBTEN&Eacute; TU PASAPORTE</div>
     </div>

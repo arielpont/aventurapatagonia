@@ -19,7 +19,7 @@
 	        return mysqli_connect_error(); 
 	    }
 
-	    mysql_ping();
+	    mysqli_ping();
 
 		if($connection == false){
 		    echo "false";

@@ -8,7 +8,8 @@ $(document).ready(function() {
     $("#btn-dni").click(function() {
         dni = $("#dni").val();
 
-        //AJAX
+        Cookies.set('cookie-dni', dni, {expires: 9000});
 
+        alert(Cookies.get('cookie-dni'));
     });
 });
