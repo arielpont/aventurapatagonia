@@ -57,13 +57,17 @@
     <meta charset="UTF-8">
 
     <!--JS-->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jQMeter.js"></script>
   <script src="js/cookie/src/cookie.js"></script>
   <script src="js/dashboard.js"></script>
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/barindicator/barIndicator/css/bi-style.css">
   </head>
   <body>
     <div class="wrapper-dashboard">
@@ -74,10 +78,13 @@
         <div class="txt">Km</div>
         <div class="km-bar">
           <div class="num">1.246</div>
+          <div class="rank">Aprendiz Cervecero</div>
+          <div id="jqmeter-container"></div>
+          <div class="num-prox">2.000km</div>
         </div>
       </div>
       <div class="parametros">
-      
+
         <div class="box">
           <div class="title">Refugios</div>
           <div class="num">3/21</div>
@@ -105,6 +112,44 @@
         </div>
 
       </div>
+
+
+      <div class="wrapper-beneficios">
+
+        <div class="box-beneficio">
+          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+          <div class="btn">
+            <div class="txt">adquirir</div>
+            <div class="get">827km</div>
+          </div>
+        </div>
+
+        <div class="box-beneficio bg-none">
+          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+          <div class="btn">
+            <div class="txt">adquirir</div>
+            <div class="get">1.135km</div>
+          </div>
+        </div>
+
+        <div class="box-beneficio">
+          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+          <div class="btn">
+            <div class="txt">adquirir</div>
+            <div class="get">354km</div>
+          </div>
+        </div>
+
+        <div class="box-beneficio bg-none">
+          <div class="title">Nombre del beneficio que vamos a ofrecer</div>
+          <div class="btn">
+            <div class="txt">adquirir</div>
+            <div class="get">554km</div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </body>
 </html>

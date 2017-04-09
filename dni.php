@@ -70,7 +70,7 @@
     <div class="wrapper-dni">
     	<div class="logo"></div>
     	<div class="profile-img" style='background:url("https://graph.facebook.com/<?php echo $userIdFacebook;?>/picture?width=150&height=150")'></div>
-    	<div class="txt">Hola <b><?php echo $userName ?></b> , ingresa tu D.N.I</div>
+    	<div class="txt">Hola <b><?php echo $userName ?></b> , ingresá tu D.N.I</div>
     	<input id="dni" type="text" name="dni">
     	<a href="dashboard.php"><div id="btn-dni">OBTEN&Eacute; TU PASAPORTE</div></a>
     </div>

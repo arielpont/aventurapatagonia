@@ -134,7 +134,8 @@ body {
     line-height: 40px;
     outline: none;
     border: none;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none !important; }
   .wrapper-dni #btn-dni:hover {
     background-color: #7098D0; }
 
@@ -144,7 +145,7 @@ body {
   .wrapper-dashboard .logo {
     position: relative;
     width: 25%;
-    height: 30px;
+    height: 50px;
     margin: 0px auto;
     margin-top: 10px;
     background: url("../img/logo/logo3.svg") center no-repeat;
@@ -198,6 +199,28 @@ body {
       font-size: 85px;
       color: #FFF;
       z-index: 99; }
+    .wrapper-dashboard .block-kms .rank {
+      position: absolute;
+      top: 140px;
+      width: 100%;
+      text-align: center;
+      font-family: "latobold";
+      font-size: 16px;
+      color: #bfd255;
+      z-index: 99; }
+    .wrapper-dashboard .block-kms #jqmeter-container {
+      margin: 0px auto;
+      margin-top: 170px; }
+    .wrapper-dashboard .block-kms .num-prox {
+      position: absolute;
+      top: 184px;
+      right: 0px;
+      text-align: center;
+      font-family: "latobold";
+      font-size: 12px;
+      color: #FFF;
+      opacity: 0.75;
+      z-index: 99; }
   .wrapper-dashboard .parametros {
     position: relative;
     width: 100%;
@@ -228,5 +251,45 @@ body {
       margin-top: 26px;
       background: #FFF;
       float: left; }
+  .wrapper-dashboard .wrapper-beneficios {
+    position: relative;
+    width: 100%; }
+    .wrapper-dashboard .wrapper-beneficios .box-beneficio {
+      position: relative;
+      margin: 0px auto;
+      min-height: 60px;
+      padding: 2% 8px;
+      background-color: #EAEAEA; }
+      .wrapper-dashboard .wrapper-beneficios .box-beneficio .title {
+        width: 65%;
+        font-family: "latoregular";
+        font-size: 14px;
+        text-align: left;
+        color: #333;
+        float: left;
+        line-height: 20px; }
+      .wrapper-dashboard .wrapper-beneficios .box-beneficio .btn {
+        width: 34%;
+        float: left; }
+        .wrapper-dashboard .wrapper-beneficios .box-beneficio .btn .txt {
+          font-family: "latobold";
+          width: 80%;
+          font-size: 12px;
+          text-align: right;
+          color: #333; }
+        .wrapper-dashboard .wrapper-beneficios .box-beneficio .btn .get {
+          border-radius: 500px;
+          padding: 4px 20px;
+          height: 30px;
+          background: #CE4E55;
+          font-family: "latobold";
+          font-size: 16px;
+          text-align: left;
+          color: #FFF;
+          line-height: 30px;
+          float: right;
+          cursor: pointer; }
+    .wrapper-dashboard .wrapper-beneficios .bg-none {
+      background: none !important; }
 
 /*# sourceMappingURL=style.css.map */

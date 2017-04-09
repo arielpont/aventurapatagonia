@@ -30,7 +30,7 @@
 
       <div class="block-up">
         <div class="logo"></div>
-        <div class="welcome-txt">Conectate con tu red favorita y empeza a disfrutar</div>
+        <div class="welcome-txt">Conectate con tu red favorita y empezá a disfrutar.</div>
       </div>
 
       <div class="block-down">
