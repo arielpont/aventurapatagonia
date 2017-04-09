@@ -47,27 +47,6 @@
 		}else{
 			$userNameshort = $userName;
 		}
-
-		/** CONNECT DB **/
-		include('php/inc.mysql.php');
-
-
-
-		/** CHEQUEO SI EL USUARIO YA ESTA EN LA DB **/
-		/*$checkUser_qr = db_select("SELECT idfacebook, fullname FROM user WHERE idfacebook = $userIdFacebook");
-
-		if($userIdFacebook == $checkUser_qr[0]['idfacebook']){
-			//EXISTE EL USUARIO. CHEQUEO SI ACTUALIZÓ DATOS EN FACEBOOK.
-			if($userName == $checkUser_qr[0]['fullname']){
-				//DATOS ACTUALIZADOS
-			}else{
-				//DATOS DEZACTUALIZADOS. ACTUALIZO NOMBRE.
-				$updateUser_qr = db_query("UPDATE user SET fullname='$userName' WHERE iduser=$checkUser_qr[0]['iduser']'");
-			}
-		}else{
-			//NO EXISTE EL USUARIO. LO AGREGO A LA DB.
-			$addUser_qr = db_query("INSERT INTO user (idfacebook, fullname) VALUES ('$userIdFacebook', '$userName')");
-		}*/
 	}
 ?>
 
@@ -93,7 +72,7 @@
     	<div class="profile-img" style='background:url("https://graph.facebook.com/<?php echo $userIdFacebook;?>/picture?width=150&height=150")'></div>
     	<div class="txt">Hola <b><?php echo $userName ?></b> , ingresa tu D.N.I</div>
     	<input id="dni" type="text" name="dni">
-    	<div id="btn-dni">OBTEN&Eacute; TU PASAPORTE</div>
+    	<a href="dashboard.php"><div id="btn-dni">OBTEN&Eacute; TU PASAPORTE</div></a>
     </div>
   </body>
 </html>
