@@ -18,6 +18,7 @@
 
 
 body {padding:0px; margin:0px; color:#FFF; position:relative;}
+.clear {clear: both}
 
 //VARIABLES
 $color-facebook: #32577B;
@@ -231,6 +232,65 @@ $color-facebook: #32577B;
 			font-size: 18px;
 			color: #FFF;
 			z-index: 99;
+		}
+
+		.km-bar {
+			position: absolute;
+			top: 80px;
+			width: 80%;
+			left: 10%;
+			z-index: 99;
+		}
+
+		.num {
+			position: absolute;
+			top: 30px;
+			width: 100%;
+			text-align: center;
+			font-family: "latobold";
+			font-size: 85px;
+			color: #FFF;
+			z-index: 99;
+		}
+	}
+
+	.parametros {
+		position: relative;
+		width: 100%;
+		height: 80px;
+		background-color: #7098D0;
+
+		.box {
+			width: 24%;
+			color: #FFF;
+			float: left;
+
+			.title {
+				width: 80%;
+				margin: 0px auto;
+				margin-top: 20px;
+				text-align: center;
+				font-family: "latoregular";
+				font-size: 14px;
+			}
+
+			.num {
+				width: 80%;
+				margin: 0px auto;
+				margin-top: 7px;
+				margin-bottom: 15px;
+				text-align: center;
+				font-family: "latobold";
+				font-size: 18px;
+			}
+		}
+
+		.line {
+			width: 2px;
+			height: 40%;
+			margin-top: 26px;
+			background: #FFF;
+			float: left;
 		}
 	}
 }

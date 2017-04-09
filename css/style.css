@@ -14,6 +14,9 @@ body {
   color: #FFF;
   position: relative; }
 
+.clear {
+  clear: both; }
+
 .wrapper-index {
   width: 100%;
   height: 100%; }
@@ -180,5 +183,50 @@ body {
       font-size: 18px;
       color: #FFF;
       z-index: 99; }
+    .wrapper-dashboard .block-kms .km-bar {
+      position: absolute;
+      top: 80px;
+      width: 80%;
+      left: 10%;
+      z-index: 99; }
+    .wrapper-dashboard .block-kms .num {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      font-family: "latobold";
+      font-size: 85px;
+      color: #FFF;
+      z-index: 99; }
+  .wrapper-dashboard .parametros {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #7098D0; }
+    .wrapper-dashboard .parametros .box {
+      width: 24%;
+      color: #FFF;
+      float: left; }
+      .wrapper-dashboard .parametros .box .title {
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 20px;
+        text-align: center;
+        font-family: "latoregular";
+        font-size: 14px; }
+      .wrapper-dashboard .parametros .box .num {
+        width: 80%;
+        margin: 0px auto;
+        margin-top: 7px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-family: "latobold";
+        font-size: 18px; }
+    .wrapper-dashboard .parametros .line {
+      width: 2px;
+      height: 40%;
+      margin-top: 26px;
+      background: #FFF;
+      float: left; }
 
 /*# sourceMappingURL=style.css.map */

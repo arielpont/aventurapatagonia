@@ -58,12 +58,12 @@
 
     <!--JS-->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/barindicator/barIndicator/jquery-barIndicator.js"></script>
   <script src="js/cookie/src/cookie.js"></script>
   <script src="js/dashboard.js"></script>
 
     <!-- CSS FILES -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/barindicator/barIndicator/css/bi-style.css">
   </head>
   <body>
     <div class="wrapper-dashboard">
@@ -72,6 +72,38 @@
         <div class="black-layout"></div>
     	  <div class="profile-img" style='background:url("https://graph.facebook.com/<?php echo $userIdFacebook;?>/picture?width=200&height=200")'></div>
         <div class="txt">Km</div>
+        <div class="km-bar">
+          <div class="num">1.246</div>
+        </div>
+      </div>
+      <div class="parametros">
+      
+        <div class="box">
+          <div class="title">Refugios</div>
+          <div class="num">3/21</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="box">
+          <div class="title">Cervezas</div>
+          <div class="num">26</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="box">
+          <div class="title">Variedad</div>
+          <div class="num">2/6</div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="box">
+          <div class="title">Shares</div>
+          <div class="num">14</div>
+        </div>
+
       </div>
     </div>
   </body>

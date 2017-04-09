@@ -1,7 +1,8 @@
 var dni = Cookies.get('cookie-dni');
 
-$(document).ready(function() {
+$(window).on('load', function(){
 
 	/*alert(Cookies.get('cookie-dni'));*/
+
 
 });
