@@ -7,12 +7,12 @@
   $fb = new Facebook\Facebook([
       'app_id' => '1002078526589298',
       'app_secret' => '806f7a062b9579fada34b55698196986',
-      'default_graph_version' => 'v2.4',
+      'default_graph_version' => 'v2.8',
   ]);
 
   $helper = $fb->getRedirectLoginHelper();
   $permissions = ['email', 'public_profile', 'user_friends']; // optional
-  $loginUrl = $helper->getLoginUrl('http://www.aeidos.com.ar/aventurapatagonia/dni.php', $permissions);
+  $loginUrl = $helper->getLoginUrl('http://www.aeidos.com.ar/aventurapatagonia/login-callback.php', $permissions);
 
   // echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 ?>
